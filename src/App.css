@@ -1,21 +1,26 @@
-.App {
+.wrapper {
+  width: 75%;
+  margin: 50px auto 0;
+  border-radius: 75px;
   text-align: center;
+  background-color: #001642;
+  padding: 0 0 75px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  width: 450px;
+  margin: 0 auto;
+  padding: 75px 0 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#main {
+  border-radius: 50px;
+  width: 80%;
+  margin: 20px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +29,110 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#indicator {
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+::placeholder {
+  text-align: center;
+  color: rgb(206, 206, 206);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.attention {
+  text-transform: uppercase;
+  color: red;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 200px;
+  height: 75px;
+  border: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#moon {
+  border-radius: 50px 0 0 50px;
+}
+
+#sun {
+  border-radius: 0 50px 50px 0;
+}
+
+.light {
+  color: #fff;
+  background: #00b8c5;
+}
+
+.dark {
+  color: #fff;
+  background: #000d25;
+}
+
+.status {
+  margin: 25px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #001642;
+  box-shadow: 0 8px 6px -6px black;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase
+}
+
+.status--primary {
+  margin: 25px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #001642;
+  box-shadow: 0 8px 6px -6px black;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase
+}
+
+input {
+  margin-top: 20px;
+  border: 0;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  padding: 3px;
+  outline: none;
 }
