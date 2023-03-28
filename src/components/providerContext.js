@@ -12,7 +12,7 @@ export const ProviderContext = props => {
 		getColor('light')
 	}
 
-	const Hook = () => {
+	const receiveColor = () => {
 		return {
 			color,
 			Dark,
@@ -21,7 +21,7 @@ export const ProviderContext = props => {
 	}
 
 	return (
-		<Provider.Provider value={Hook()}>
+		<Provider.Provider value={receiveColor()}>
 			{props.children}
 		</Provider.Provider>
 	)

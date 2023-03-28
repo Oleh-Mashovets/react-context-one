@@ -5,7 +5,6 @@ import Sun from "../images/sun.svg";
 
 export const Buttons = () => {
 	const changeTheme = useContext(Provider)
-	const changeColor = useContext(Provider);
 
 	const Dark = () => {
 		changeTheme.Dark()
@@ -16,10 +15,10 @@ export const Buttons = () => {
 	}
 	return (
 		<header className='header'>
-			<button className={changeColor.color === "light" ? "light" : "dark"} id='moon' onClick={Dark}>
+			<button className={changeTheme.color === "light" ? "light" : "dark"} id='moon' onClick={Dark}>
 			<img src={Moon} alt="Your SVG" />
 			</button>
-			<button className={changeColor.color === "dark" ? "light" : "dark"} id='sun' onClick={Light}>
+			<button className={changeTheme.color === "dark" ? "light" : "dark"} id='sun' onClick={Light}>
 			<img src={Sun} alt="Your SVG" />
 			</button>
 		</header>
